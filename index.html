@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Three Column Layout</title>
+    <style>
+      /* Define the layout of the container */
+
+            html, body {
+        height: 100%;
+        }
+
+        .container {
+        display: flex;  
+        flex-wrap: wrap;
+        min-height: 100vh;
+        }
+
+
+      
+      
+      /* Style the first column */
+      .col-1 {
+        width: 20%;
+        background-color: #ddd;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      
+      /* Style the second column */
+      .col-2 {
+        width: 60%;
+        background-color: #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      
+      /* Style the third column */
+      .col-3 {
+        width: 20%;
+        background-color: #ddd;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      
+      /* Add responsive styles */
+      @media screen and (max-width: 768px) {
+        .col-1, .col-2,
+        .col-3 {
+          width: 100%;
+        }
+      }
+      
+      /* Style the header */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* Style the footer */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <div class="container">
+      <div class="col-1">
+        <h2>Column 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="col-2">
+        <h2>Column 2</h2>
+        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col-3">
+        <h2>Column 3</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+    <footer>
+      <p>Footer</p>
+    </footer>
+
+  </body>
+</html>
